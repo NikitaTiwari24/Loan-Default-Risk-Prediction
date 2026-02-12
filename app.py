@@ -4,7 +4,7 @@ import numpy as np
 
 app = Flask(__name__)
 
-model = joblib.load("model.pkl")
+model = joblib.load("loan_xgb_final.pkl")
 
 @app.route('/')
 def home():
