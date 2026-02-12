@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Loan Prediction</title>
+</head>
+
+<body>
+    <h2>Loan Prediction App</h2>
+
+    <form action="/predict" method="post">
+        <input type="text" name="income" placeholder="Income" required><br><br>
+        <input type="text" name="loan_amount" placeholder="Loan Amount" required><br><br>
+        <input type="text" name="credit_score" placeholder="Credit Score" required><br><br>
+        <button type="submit">Predict</button>
+    </form>
+
+    <h3>{{ prediction_text }}</h3>
+
+</body>
+
+</html>
